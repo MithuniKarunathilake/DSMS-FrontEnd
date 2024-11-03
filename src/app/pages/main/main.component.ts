@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component,OnInit } from '@angular/core';
+import AOS from 'aos';
 
 @Component({
   selector: 'app-main',
@@ -8,5 +9,8 @@ import { Component } from '@angular/core';
   styleUrl: './main.component.css'
 })
 export class MainComponent {
+  ngOnInit(){
+    AOS.init();
+  }
 
 }
